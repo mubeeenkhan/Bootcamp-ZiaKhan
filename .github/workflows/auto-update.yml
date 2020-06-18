@@ -30,8 +30,4 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
       name: Deploying using surge
-      run: surge ./ projects2020.surge.sh --token "10dcbc050121a41d32d2e9192a7a13f3"
-      
-      
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      run: surge ./ projects2020.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
